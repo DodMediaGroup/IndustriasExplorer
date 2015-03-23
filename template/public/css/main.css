@@ -1,0 +1,346 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+* {
+  box-sizing: border-box;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: #f2f2f2;
+  font-size: 14px;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Open Sans', Helvetica, Geneva, Arial, sans-serif;
+}
+.container {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  margin: auto;
+  max-width: 970px;
+  min-width: 480px;
+  width: 100%;
+}
+.align-center {
+  text-align: center;
+}
+.align-right {
+  text-align: right;
+}
+.float-right {
+  float: right;
+}
+.super-div {
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.principal-logo {
+  background: url('../images/logo.png') no-repeat left center;
+  background-size: contain;
+  position: relative;
+}
+.principal-header {
+  height: 100px;
+  padding-top: 10px;
+}
+.principal-header h1 {
+  height: 100%;
+  margin: 0px;
+}
+.principal-header .multi-language {
+  font-size: .85em;
+  margin-top: 1.5em;
+}
+.principal-header .multi-language a {
+  color: #666666;
+  padding: 0px .5em;
+  text-decoration: underline;
+}
+.principal-header .multi-language a.language-spanish {
+  border-right: 1px solid #666666;
+  padding-right: .7em;
+}
+.principal-header .align-right {
+  padding-right: 0px;
+}
+.principal-header .search {
+  font-size: 0em;
+}
+.principal-header .search input,
+.principal-header .search button {
+  background: transparent;
+  border: 1px solid #808080;
+  display: inline-block;
+  font-size: 13px;
+  outline: none;
+  padding: .2em .5em;
+}
+.principal-header .search input {
+  border-right: 0px;
+  width: 200px;
+}
+.principal-menu {
+  height: 32px;
+  text-align: right;
+}
+.principal-menu .menu {
+  background-color: #f2f2f2;
+  display: inline-block;
+  padding: 0px 5px;
+}
+.principal-menu .menu li {
+  list-style: none;
+}
+.principal-menu .menu > li {
+  display: inline-block;
+  padding: 0px 5px;
+  position: relative;
+}
+.principal-menu .menu > li a {
+  color: #666666;
+  display: block;
+  line-height: 32px;
+}
+.principal-menu .menu > li a.active,
+.principal-menu .menu > li a:hover {
+  color: #8c8c8c;
+  text-decoration: none;
+}
+.principal-menu .menu > li:hover .sub-menu {
+  transform: scaleY(1);
+}
+.principal-menu .menu .sub-menu {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 0px 8px;
+  position: absolute;
+  text-align: left;
+  transform: scaleY(0);
+  transition: all .1s linear;
+  width: 150px;
+  z-index: 9999;
+}
+.principal-menu .menu .sub-menu a {
+  color: #ffffff;
+  font-size: .9em;
+  line-height: 2em;
+}
+.principal-menu .menu .sub-menu a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.principal-slide {
+  box-shadow: 0px 1px 1px #666666;
+  display: table;
+  position: relative;
+  width: 100%;
+}
+.principal-slide .camera_wrap .camera_pag {
+  background: linear-gradient(0deg, #d9d9d9 0%, #ffffff 100%);
+}
+.principal-slide .camera_wrap .camera_pag .camera_pag_ul {
+  text-align: center;
+}
+.cells {
+  margin-top: 15px;
+  padding: 0px 8px;
+}
+.cells .cell {
+  padding: 7px;
+}
+.cells .padding-cell {
+  background-color: #f2f2f2;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  padding: 12px;
+}
+.cells h1,
+.cells h2 {
+  color: #666666;
+  font-size: 1.1em;
+  font-weight: 600;
+  margin: 0px 0px 8px;
+}
+.cells img {
+  float: left;
+  margin: 0px 5px 5px 0px;
+  width: 100px;
+}
+.cells p {
+  font-size: .9em;
+  line-height: 1.3em;
+  text-align: justify;
+}
+.cells a {
+  color: #666666;
+  font-size: .9em;
+  text-decoration: underline;
+}
+.cells .form-group {
+  margin-bottom: 8px;
+}
+.cells label {
+  font-size: .9em;
+  font-weight: normal;
+  text-align: left !important;
+}
+.cells input {
+  border-radius: 0px;
+  font-size: .9em;
+  height: 28px;
+  padding: 1px 12px;
+}
+.cells button {
+  background: linear-gradient(0deg, #d9d9d9 0%, #ffffff 100%);
+  font-size: .9em;
+  font-weight: 600;
+  height: 28px;
+  line-height: 15px;
+}
+.sgs {
+  margin-top: 15px;
+  position: relative;
+}
+.sgs img {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+.principal-footer {
+  background-color: #d9d9d9;
+  margin: 0px -15px;
+}
+.principal-footer p {
+  color: #666666;
+  font-size: .8em;
+  margin: 0px;
+  margin-top: 30px;
+  padding: 15px 15px 20px;
+}
+.page {
+  display: table;
+  margin-top: 30px;
+  padding: 0px 30px;
+  width: 100%;
+}
+.page a {
+  color: #666666;
+  font-size: .9em;
+  text-decoration: underline;
+}
+.page article {
+  margin-bottom: 20px;
+}
+.page h1 {
+  font-size: 2.1em;
+}
+.page h2 {
+  font-size: 1.9em;
+}
+.page h3 {
+  font-size: 1.7em;
+}
+.page h4 {
+  font-size: 1.5em;
+}
+.page h1,
+.page h2,
+.page h3,
+.page h4 {
+  font-weight: 600;
+  margin: 5px 0px 15px;
+}
+.page img {
+  max-width: 100%;
+}
+.page ol,
+.page ul {
+  padding-left: 20px;
+}
+.page ol li,
+.page ul li {
+  margin-bottom: 15px;
+}
+.page p {
+  margin-bottom: 20px;
+  line-height: 1.4em;
+  text-align: justify;
+}
+.page .gallery {
+  margin-bottom: 20px;
+  position: relative;
+  text-align: center;
+}
+.page .gallery a {
+  display: inline-block;
+}
+.page .gallery a img {
+  height: 135px;
+  width: auto;
+}
+.page .art-date {
+  color: #666666;
+  margin: 0px;
+}
+.page .art-title {
+  color: #666666;
+  font-size: 1.3em;
+  margin: 0px 0px 8px;
+  text-decoration: underline;
+}
+.page .float-right {
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+.page .client {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 143px;
+  position: relative;
+}
+.page .form {
+  font-size: .9em;
+  margin: auto;
+  max-width: 500px;
+  width: 100%;
+}
+.page .form .form-group {
+  margin: 0px;
+  padding: 8px 15px;
+}
+.page .form .form-group:nth-child(2n) {
+  background-color: #f2f2f2;
+}
+.page .form input,
+.page .form textarea {
+  border-radius: 0px;
+  box-shadow: none;
+  font-size: 1em;
+  outline: none;
+}
+.page .form input {
+  height: 30px;
+}
+.page .form button {
+  background: linear-gradient(0deg, #d9d9d9 0%, #ffffff 100%);
+  border-radius: 0px;
+  font-size: 1em;
+  font-weight: 600;
+  height: 30px;
+  line-height: 17px;
+}
+.page .form span {
+  font-size: .9em;
+}
+.page address {
+  font-size: .9em;
+  margin-top: 45px;
+}
+.page address p {
+  margin: 0px;
+  text-align: center;
+}

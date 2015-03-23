@@ -1,0 +1,357 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+
+
+@color-black: #000000;
+@color-gray: #666666;
+@color-gray-light: #F2F2F2;
+@color-white: #FFFFFF;
+
+@font-general: Tahoma, Geneva, Verdana, sans-serif;
+@font-title: 'Open Sans', Helvetica, Geneva, Arial, sans-serif;
+
+*{
+	box-sizing: border-box;
+	font-family: @font-general;
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background-color: @color-gray-light;
+	font-size: 14px;
+}
+h1, h2, h3{
+	font-family: @font-title;
+}
+.container{
+	background-color: @color-white;
+	box-shadow: 0px 0px 4px fadeout(@color-black, 50%);
+	margin: auto;
+	max-width: 970px;
+	min-width: 480px;
+	width: 100%;
+}
+.align-center{
+	text-align: center;
+}
+.align-right{
+	text-align: right;
+}
+.float-right{
+	float: right;
+}
+.super-div{
+	height: 100%;
+	left: 0px;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+}
+
+
+.principal-logo{
+	background: url('../images/logo.png') no-repeat left center;
+	background-size: contain;
+	position: relative;
+}
+
+.principal-header{
+	@this-height: 100px;
+	height: @this-height;
+	padding-top: 10px;
+
+	h1{
+		height: 100%;
+		margin: 0px;
+	}
+	.multi-language{
+		font-size: .85em;
+		margin-top: 1.5em;
+		a{
+			color: @color-gray;
+			padding: 0px .5em;
+			text-decoration: underline;
+			&.language-spanish{
+				border-right: 1px solid @color-gray;
+				padding-right: .7em;
+			}
+		}
+	}
+	.align-right{
+		padding-right: 0px;
+	}
+	.search{
+		font-size: 0em;
+		input, button{
+			background: transparent;
+			border: 1px solid lighten(@color-gray, 10%);
+			display: inline-block;
+			font-size: 13px;
+			outline: none;
+			padding: .2em .5em;
+		}
+		input{
+			border-right: 0px;
+			width: 200px;
+		}
+	}
+}
+.principal-menu{
+	@this-height: 32px;
+	height: @this-height;
+	text-align: right;
+	.menu{
+		background-color: @color-gray-light;
+		display: inline-block;
+		padding: 0px 5px;
+		li{
+			list-style: none;
+		}
+		&>li{
+			display: inline-block;
+			padding: 0px 5px;
+			position: relative;
+			a{
+				color: @color-gray;
+				display: block;
+				line-height: @this-height;
+				&.active, &:hover{
+					color: lighten(@color-gray, 15%);
+					text-decoration: none;
+				}
+			}
+			&:hover{
+				.sub-menu{
+					transform: scaleY(1);
+				}
+			}
+		}
+		.sub-menu{
+			background-color: fadeout(@color-black, 10%);
+			padding: 0px 8px;
+			position: absolute;
+			text-align: left;
+			transform: scaleY(0);
+			transition: all .1s linear;
+			width: 150px;
+			z-index: 9999;
+			a{
+				color: @color-white;
+				font-size: .9em;
+				line-height: 2em;
+				&:hover{
+					color: @color-white;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+.principal-slide{
+	box-shadow: 0px 1px 1px @color-gray;
+	display: table;
+	position: relative;
+	width: 100%;
+	.camera_wrap{
+		.camera_pag{
+			background: linear-gradient(0deg, darken(@color-gray-light, 10%) 0%, @color-white 100%);
+			.camera_pag_ul{
+				text-align: center;
+			}
+		}
+	}
+}
+.cells{
+	margin-top: 15px;
+	padding: 0px 8px;
+
+	.cell{
+		padding: 7px;
+	}
+	.padding-cell{
+		background-color: @color-gray-light;
+		border: 1px solid darken(@color-gray-light, 10%);
+		border-radius: 5px;
+		padding: 12px;
+	}
+	h1, h2{
+		color: @color-gray;
+		font-size: 1.1em;
+		font-weight: 600;
+		margin: 0px 0px 8px;
+	}
+	img{
+		float: left;
+		margin: 0px 5px 5px 0px;
+		width: 100px;
+	}
+	p{
+		font-size: .9em;
+		line-height: 1.3em;
+		text-align: justify;
+	}
+	a{
+		color: @color-gray;
+		font-size: .9em;
+		text-decoration: underline;
+	}
+	.form-group{
+		margin-bottom: 8px;
+	}
+	label{
+		font-size: .9em;
+		font-weight: normal;
+		text-align: left !important;
+	}
+	input{
+		border-radius: 0px;
+		font-size: .9em;
+		height: 28px;
+		padding: 1px 12px;
+	}
+	button{
+		background: linear-gradient(0deg, darken(@color-gray-light, 10%) 0%, @color-white 100%);
+		font-size: .9em;
+		font-weight: 600;
+		height: 28px;
+		line-height: 15px;
+	}
+}
+.sgs{
+	margin-top: 15px;
+	position: relative;
+	img{
+		display: block;
+		margin: auto;
+		width: 100%;
+	}
+}
+.principal-footer{
+	background-color: darken(@color-gray-light, 10%);
+	margin: 0px -15px;
+	p{
+		color: @color-gray;
+		font-size: .8em;
+		margin: 0px;
+		margin-top: 30px;
+		padding: 15px 15px 20px;
+	}
+}
+.page{
+	display: table;
+	margin-top: 30px;
+	padding: 0px 30px;
+	width: 100%;
+	a{
+		color: @color-gray;
+		font-size: .9em;
+		text-decoration: underline;
+	}
+	article{
+		margin-bottom: 20px;
+	}
+	h1{
+		font-size: 2.1em;
+	}
+	h2{
+		font-size: 1.9em;
+	}
+	h3{
+		font-size: 1.7em;
+	}
+	h4{
+		font-size: 1.5em;
+	}
+	h1, h2, h3, h4{
+		font-weight: 600;
+		margin: 5px 0px 15px;
+	}
+	img{
+		max-width: 100%;
+	}
+	ol, ul{
+		padding-left: 20px;
+		li{
+			margin-bottom: 15px;
+		}
+	}
+	p{
+		margin-bottom: 20px;
+		line-height: 1.4em;
+		text-align: justify;
+	}
+	.gallery{
+		margin-bottom: 20px;
+		position: relative;
+		text-align: center;
+		a{
+			display: inline-block;
+			img{
+				height: 135px;
+				width: auto;
+			}
+		}
+	}
+	.art-date{
+		color: @color-gray;
+		margin: 0px;
+	}
+	.art-title{
+		color: @color-gray;
+		font-size: 1.3em;
+		margin: 0px 0px 8px;
+		text-decoration: underline;
+	}
+	.float-right{
+		margin-bottom: 5px;
+		margin-left: 5px;
+	}
+	.client{
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		height: 143px;
+		position: relative;
+	}
+	.form{
+		font-size: .9em;
+		margin: auto;
+		max-width: 500px;
+		width: 100%;
+		.form-group{
+			margin: 0px;
+			padding: 8px 15px;
+		}
+		.form-group:nth-child(2n){
+			background-color: @color-gray-light;
+		}
+		input, textarea{
+			border-radius: 0px;
+			box-shadow: none;
+			font-size: 1em;
+			outline: none;
+		}
+		input{
+			height: 30px;
+		}
+		button{
+			background: linear-gradient(0deg, darken(@color-gray-light, 10%) 0%, @color-white 100%);
+			border-radius: 0px;
+			font-size: 1em;
+			font-weight: 600;
+			height: 30px;
+			line-height: 17px;
+		}
+		span{
+			font-size: .9em;
+		}
+	}
+	address{
+		font-size: .9em;
+		margin-top: 45px;
+		p{
+			margin: 0px;
+			text-align: center;
+		}
+	}
+}
